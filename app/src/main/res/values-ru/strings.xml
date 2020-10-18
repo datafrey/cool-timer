@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_stop_button_start_text">Старт</string>
+    <string name="start_stop_button_stop_text">Стоп</string>
+    <string name="action_settings_title">Настройки</string>
+    <string name="enable_sound_preference_title">Включить звук</string>
+    <string name="enable_sound_preference_summary_on">Звук включён</string>
+    <string name="enable_sound_preference_summary_off">Звук выключен</string>
+    <string name="timer_melody_preference_title">Мелодия таймера</string>
+    <string name="default_interval_preference_title">Интервал по-умолчанию</string>
+    <string name="default_interval_string_not_integer_number_error_message">Введите числовое значение, пожалуйста!</string>
+</resources>
