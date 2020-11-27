@@ -1,4 +1,4 @@
-package com.datafrey.cooltimer.settings;
+package com.datafrey.cooltimer.activities;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,5 +30,4 @@ public class SettingsActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

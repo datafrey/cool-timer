@@ -1,4 +1,4 @@
-package com.datafrey.cooltimer.main;
+package com.datafrey.cooltimer.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.datafrey.cooltimer.R;
 import com.datafrey.cooltimer.databinding.ActivityMainBinding;
-import com.datafrey.cooltimer.settings.SettingsActivity;
+import com.datafrey.cooltimer.viewmodels.MainActivityViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,5 +74,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }

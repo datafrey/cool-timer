@@ -1,4 +1,4 @@
-package com.datafrey.cooltimer.main;
+package com.datafrey.cooltimer.viewmodels;
 
 import android.app.Application;
 import android.content.SharedPreferences;
@@ -21,23 +21,24 @@ public class MainActivityViewModel extends AndroidViewModel
     private CountDownTimer timer;
     private final SharedPreferences sharedPreferences;
 
-    private final MutableLiveData<Integer> startStopButtonText = new MutableLiveData(R.string.start_stop_button_start_text);
+    private final MutableLiveData<Integer> startStopButtonText = new MutableLiveData<>(R.string.start_stop_button_start_text);
     public LiveData<String> getStartStopButtonText() {
         return Transformations.map(startStopButtonText, text -> getApplication().getString(text));
     }
 
-    private final MutableLiveData<Boolean> seekBarEnabled = new MutableLiveData(true);
+    private final MutableLiveData<Boolean> seekBarEnabled = new MutableLiveData<>(true);
     public LiveData<Boolean> getSeekBarEnabled() {
         return seekBarEnabled;
     }
 
-    private final MutableLiveData<Integer> timeLeftSeconds = new MutableLiveData();
+    private final MutableLiveData<Integer> timeLeftSeconds = new MutableLiveData<>();
     public LiveData<Integer> getTimeLeftSeconds() {
         return timeLeftSeconds;
     }
     public LiveData<String> getTimeLeftString() {
         return Transformations.map(timeLeftSeconds, this::getTimeLeftString);
     }
+
     public void setTimeLeftSeconds(int timeLeft) {
         timeLeftSeconds.setValue(timeLeft);
     }
@@ -129,5 +130,4 @@ public class MainActivityViewModel extends AndroidViewModel
         super.onCleared();
         sharedPreferences.unregisterOnSharedPreferenceChangeListener(this);
     }
-
 }

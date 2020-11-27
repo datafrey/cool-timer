@@ -1,4 +1,4 @@
-package com.datafrey.cooltimer.settings;
+package com.datafrey.cooltimer.fragments;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -89,5 +89,4 @@ public class SettingsFragment extends PreferenceFragmentCompat
         getPreferenceScreen().getSharedPreferences()
                 .unregisterOnSharedPreferenceChangeListener(this);
     }
-
 }
