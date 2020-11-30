@@ -14,11 +14,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.datafrey.cooltimer.R;
 import com.datafrey.cooltimer.databinding.ActivityMainBinding;
-import com.datafrey.cooltimer.viewmodels.MainActivityViewModel;
+import com.datafrey.cooltimer.viewmodels.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MainActivityViewModel viewModel;
+    private MainViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        viewModel = new ViewModelProvider(this).get(MainActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
         binding.setViewModel(viewModel);
         binding.setLifecycleOwner(this);

@@ -14,7 +14,7 @@ import androidx.lifecycle.Transformations;
 
 import com.datafrey.cooltimer.R;
 
-public class MainActivityViewModel extends AndroidViewModel
+public class MainViewModel extends AndroidViewModel
         implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private boolean timerIsOn = false;
@@ -50,7 +50,7 @@ public class MainActivityViewModel extends AndroidViewModel
         timerIsOn = false;
     }
 
-    public MainActivityViewModel(@NonNull Application application) {
+    public MainViewModel(@NonNull Application application) {
         super(application);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplication());
