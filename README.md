@@ -1,3 +1,3 @@
 # Cool Timer
 
-A simple timer application with settings.
+A simple timer android application with settings.
